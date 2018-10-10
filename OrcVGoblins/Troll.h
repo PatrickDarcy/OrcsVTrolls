@@ -3,7 +3,7 @@
 #include"Character.h"
 
 
-struct Troll : public Character {
-public:
+struct Troll : public Character 
+{
 
 };

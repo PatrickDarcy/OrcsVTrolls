@@ -1,2 +1,10 @@
-﻿  main.cpp
-  OrcVGoblins.vcxproj -> C:\Users\C00226157\Desktop\New folder\OrcsVTrolls\Debug\OrcVGoblins.exe
+﻿  Character.cpp
+c:\users\c00226157\desktop\orcsvtrolls\orcvgoblins\character.h(10): error C2535: 'Character::Character(void)': member function already defined or declared
+  c:\users\c00226157\desktop\orcsvtrolls\orcvgoblins\character.h(9): note: see declaration of 'Character::Character'
+  Orc.cpp
+c:\users\c00226157\desktop\orcsvtrolls\orcvgoblins\character.h(10): error C2535: 'Character::Character(void)': member function already defined or declared
+  c:\users\c00226157\desktop\orcsvtrolls\orcvgoblins\character.h(9): note: see declaration of 'Character::Character'
+  main.cpp
+c:\users\c00226157\desktop\orcsvtrolls\orcvgoblins\character.h(10): error C2535: 'Character::Character(void)': member function already defined or declared
+  c:\users\c00226157\desktop\orcsvtrolls\orcvgoblins\character.h(9): note: see declaration of 'Character::Character'
+  Generating Code...
