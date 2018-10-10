@@ -10,10 +10,12 @@ struct Character
 	virtual int melee3();
 	virtual int defence1();
 	virtual int defence2();
+	virtual void playerMove();
+	virtual void aiMove();
 
 protected:
-	int damageMod;
-	int defenceMod;
-	int health;
+	int m_damageMod;
+	int m_defenceMod;
+	int m_health;
 
 };

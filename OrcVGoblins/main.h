@@ -10,11 +10,10 @@ enum class PlayerClass {ORC, TROLL};
 struct Player
 {
 	PlayerClass PlayerChoice;
-	int armtSize;
+
+	int currentActiveUnit;
 };
 /// <summary>
-/// intro
-/// chooseClass()
 /// playersturn has a combat(ourArray,enemyArray, actionNum, Player & t_player)
 /// enemiesturn has a combat(enemyArray, ourArray, actionNum, Player & t_player)
 /// if(you win){
@@ -33,3 +32,14 @@ int const MAX_PLAYER_UNITS(5);
 int const MAX_ENEMY_UNITS(20);
 
 std::string m_playerClass = "";
+std::string m_enemyClass = "";
+
+Character * playerUnits[MAX_PLAYER_UNITS];
+Character * enemyUnits[MAX_ENEMY_UNITS];
+
+Player m_player;
+Player m_AI;
+
+void game();
+void classChoice();
+void introMessage();

@@ -24,3 +24,11 @@ int Character::defence2()
 {
 	return 0;
 }
+
+void Character::playerMove()
+{
+}
+
+void Character::aiMove()
+{
+}
