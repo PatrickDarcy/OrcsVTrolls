@@ -25,10 +25,17 @@ int Character::defence2()
 	return 0;
 }
 
-void Character::playerMove()
+int Character::playerMove()
 {
+	return 0;
 }
 
-void Character::aiMove()
+int Character::aiMove()
 {
+	return 0;
+}
+
+int Character::getHealth()
+{
+	return m_health;
 }

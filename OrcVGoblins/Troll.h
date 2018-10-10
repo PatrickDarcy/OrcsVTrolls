@@ -12,7 +12,13 @@ struct Troll : public Character
 	int melee3();
 	int defence1();
 	int defence2();
-	void playerMove();
-	void aiMove();
+	int playerMove();
+	int aiMove();
+	int gethealth();
 
+protected:
+
+	int m_moveNum;
+	int m_damageMod;
+	int m_defenceMod;
 };

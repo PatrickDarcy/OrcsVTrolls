@@ -1,2 +1,6 @@
-﻿  main.cpp
+﻿  Character.cpp
+  main.cpp
+  Orc.cpp
+  Troll.cpp
+  Generating Code...
   OrcVGoblins.vcxproj -> C:\Users\C00226157\Desktop\OrcsVTrolls\Debug\OrcVGoblins.exe

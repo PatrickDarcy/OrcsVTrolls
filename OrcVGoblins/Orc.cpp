@@ -32,8 +32,10 @@ int Orc::defence2()
 	return 0;
 }
 
-void Orc::playerMove()
+int Orc::playerMove()
 {
+	int dmgOrDef;
+
 	std::cout << "YOU CAN CHOOSE TO ATTACK OR DEFEND. IF YOU ATTACK YOU DEAL " << std::endl;
 	std::cout << "DAMAGE TO THE ENEMY BUT IF YOU DEFEND YOU MINUSE THE DAMAGE" << std::endl;
 	std::cout << "YOU TAKE" << std::endl;
@@ -47,30 +49,45 @@ void Orc::playerMove()
 	std::cout << "TYPE THE NUMBER OF THE MOVE YOU WANT TO DO: " << std::endl;
 	std::cin >> m_moveNum;
 	std::cout << "#######################################################" << std::endl;
-	
-	if (m_moveNum == 1)
+
+	if (m_moveNum < 4)
 	{
-		melee1();
+		if (m_moveNum == 1)
+		{
+			dmgOrDef = melee1();
+		}
+		else if (m_moveNum == 2)
+		{
+			dmgOrDef = melee2();
+		}
+		else if (m_moveNum == 3)
+		{
+			dmgOrDef = melee3();
+		}
 	}
-	else if (m_moveNum == 2)
+
+	else if (m_moveNum >= 4)
 	{
-		melee2();
+		if (m_moveNum == 4)
+		{
+			dmgOrDef = -defence1();
+		}
+		else if (m_moveNum == 5)
+		{
+			dmgOrDef = -defence2();
+		}
 	}
-	else if (m_moveNum == 3)
-	{
-		melee3();
-	}
-	else if (m_moveNum == 4)
-	{
-		defence1();
-	}
-	else if (m_moveNum == 5)
-	{
-		defence2();
-	}
+
+	return dmgOrDef;
 }
 
-void Orc::aiMove()
+int Orc::aiMove()
 {
+	return 0;
+}
+
+int Orc::getHealth()
+{
+	return m_health;
 }
 

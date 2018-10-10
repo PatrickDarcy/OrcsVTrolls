@@ -14,10 +14,12 @@ struct Orc : public Character
 	int melee3();
 	int defence1();
 	int defence2();
-	void playerMove();
-	void aiMove();
+	int playerMove();
+	int aiMove();
+	int getHealth();
 
 protected:
+
 	int m_moveNum;
 	int m_damageMod;
 	int m_defenceMod;

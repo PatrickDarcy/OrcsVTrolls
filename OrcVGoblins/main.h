@@ -40,6 +40,14 @@ Character * enemyUnits[MAX_ENEMY_UNITS];
 Player m_player;
 Player m_AI;
 
+int m_playerDmgDone = 0;
+int m_enemyDmgDone = 0;
+int m_currentPlayer = 4;
+int m_currentEnemies = 4;
+
+bool m_lost = false;
+
 void game();
 void classChoice();
 void introMessage();
+void postCombat(int t_playerDmg, int t_enemyDmg);
